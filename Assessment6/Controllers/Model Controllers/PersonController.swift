@@ -17,6 +17,9 @@ class PersonController {
     // Source of truth
     var people: [Person] = []
     
+    // To make sure that only 2 people are in each gorup, iterate through the array of people and add each to a group, creating a new one if there are already 2 people
+    var groups: [[Person]] = []
+    
     // MARK: - CRUD Functions
     
     // Create
